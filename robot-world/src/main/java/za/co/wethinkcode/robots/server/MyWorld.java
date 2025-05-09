@@ -63,19 +63,19 @@ public class MyWorld implements World {
         int newY = currentPosition.getY();
 
         switch (robot.getDirection()) {
-            case UP:
+//            case UP:
             case NORTH: // If UP and NORTH are treated the same, use either one
                 newY += nrSteps;
                 break;
-            case DOWN:
+//            case DOWN:
             case SOUTH:
                 newY -= nrSteps;
                 break;
-            case LEFT:
+//            case LEFT:
             case WEST:
                 newX -= nrSteps;
                 break;
-            case RIGHT:
+//            case RIGHT:
             case EAST:
                 newX += nrSteps;
                 break;
@@ -85,7 +85,7 @@ public class MyWorld implements World {
 
         // Check if the new position is within the world
         if (isNewPositionAllowed(newPosition)) {
-            robot.setPosition(newPosition);
+            robot.set.Position(newPosition);
             return UpdateResponse.SUCCESS;
         } else {
             return UpdateResponse.FAILED_OBSTRUCTED;  // Or FAILED_OUTSIDE_WORLD if position is invalid
@@ -157,7 +157,7 @@ public class MyWorld implements World {
         }
         // Reset robot position to center and direction to UP
         robots.get(0).setPosition(CENTRE);
-        robots.get(0).setDirection(Direction.UP);
+        robots.get(0).setDirection(Direction.NORTH);
     }
 
     @Override

@@ -1,0 +1,8 @@
+za\co\wethinkcode\robots\client\ForwardCommand.class
+za\co\wethinkcode\robots\client\LaunchCommand.class
+za\co\wethinkcode\robots\Position.class
+za\co\wethinkcode\robots\client\FireCommand.class
+za\co\wethinkcode\robots\Direction.class
+za\co\wethinkcode\robots\client\Client.class
+za\co\wethinkcode\robots\client\DefendCommand.class
+za\co\wethinkcode\robots\client\BackCommand.class
